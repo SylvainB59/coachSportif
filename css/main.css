@@ -96,10 +96,98 @@ textarea {
    ========================================================================== */
 
 /*start of common rules*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    font-family: 'Black Ops One', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    color: #0B0B0B;
+}
+
+a:hover {
+    color: #BB0000;
+    text-decoration: none;
+}
+
+.bouton {
+    background-color: #BCBCBC;
+    border: 3px solid #BB0000;
+    border-radius: 10px;
+    z-index: 10;
+}
 
 /*Enc of common rules*/
 
 /*START OF HEADER*/
+
+.title {
+    height: 300px;
+    color: #BB0000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title:hover{
+    background: url("../img/cardio.gif");
+    background-size: 200% 120%;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 4em;
+}
+
+.title p {
+    margin-top: 25%;
+    font-size: 2em;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.best {
+    position: relative;
+    transition: 1s;
+    left: 100%;
+}
+
+.title:hover .best {
+    transition: 2s;
+    left: 0;
+}
+
+/*Navigation*/
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*right: 0;*/
+    top: 0;
+    position: fixed;
+}
+
+header nav ul li {
+    width: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+}
 
 /*END OF HEADER*/
 
